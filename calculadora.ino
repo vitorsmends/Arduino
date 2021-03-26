@@ -62,6 +62,7 @@ void loop(){
             second = SecondNumber();
             total = first + second;
             lcd.setCursor(0,3);
+          	lcd.print("= ");
             lcd.print(total);
           	first = 0;
           	second = 0;
@@ -70,6 +71,7 @@ void loop(){
             third = ThirdNumber(total, '+');
             total = total + third;
             lcd.setCursor(0,3);
+            lcd.print("= ");
             lcd.print(total);
             third = 0;
             }
@@ -82,6 +84,7 @@ void loop(){
             second = SecondNumber();
             total = first - second;
             lcd.setCursor(0,3);
+          	lcd.print("= ");
             lcd.print(total);
           	first = 0;
           	second = 0;
@@ -90,6 +93,7 @@ void loop(){
             third = ThirdNumber(total, '-');
             total = total - third;
             lcd.setCursor(0,3);
+            lcd.print("= ");
             lcd.print(total);
             third = 0;
             }
@@ -102,6 +106,7 @@ void loop(){
             second = SecondNumber();
             total = first * second;
             lcd.setCursor(0,3);
+          	lcd.print("= ");
             lcd.print(total);
           	first = 0;
           	second = 0;
@@ -110,6 +115,7 @@ void loop(){
             third = ThirdNumber(total, '*');
             total = total * third;
             lcd.setCursor(0,3);
+            lcd.print("= ");
             lcd.print(total);
             third = 0;
             }
@@ -122,6 +128,7 @@ void loop(){
             second = SecondNumber();
             total = first / second;
             lcd.setCursor(0,3);
+          	lcd.print("= ");
             lcd.print(total);
           	first = 0;
           	second = 0;
@@ -130,6 +137,7 @@ void loop(){
             third = ThirdNumber(total, '/');
             total = total / third;
             lcd.setCursor(0,3);
+            lcd.print("= ");
             lcd.print(total);
             third = 0;
             }
